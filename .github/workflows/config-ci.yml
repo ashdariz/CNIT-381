@@ -13,8 +13,8 @@ jobs:
         run: |
           cd config-pipeline
           python3 generate.py
-- name: Upload the generated configs
-  uses: actions/upload-artifact@v5
-  with:
-    name: device-configs
-    path: config-pipeline/configs/
+      - name: Upload the generated configs
+        uses: actions/upload-artifact@v5
+        with:
+          name: device-configs
+          path: config-pipeline/configs/
