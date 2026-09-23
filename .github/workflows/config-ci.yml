@@ -10,9 +10,9 @@ jobs:
       - name: Install tools
           run: python3 -m pip install -r config-pipeline/requirements.txt
       - name: Generate and validate configs
-          run: |
-            cd config-pipeline
-            python3 generate.py
+        run: |
+          cd config-pipeline
+          python3 generate.py
 - name: Upload the generated configs
   uses: actions/upload-artifact@v5
   with:
